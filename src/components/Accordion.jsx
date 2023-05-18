@@ -27,7 +27,6 @@ const SongAccordion = ({ song, i }) => {
               <h3 className="font-semibold">{song.name}</h3>
               <span className="italic font-semibold">{song.artist}</span>
             </div>
-
             <HiPlusSm size={25} className="font-bold" />
           </div>
         </AccordionHeader>
