@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from "../components/Header";
-import TrendingSongs from "../components/TrendingSongs";
-import Button from "../components/Button";
+import Header from "./Header";
+import TrendingSongs from "./TrendingSongs";
+import Button from "../../components/Button";
 
 const Home = () => {
   return (
@@ -16,7 +16,7 @@ const Home = () => {
             Create your own custom playlist today.
           </p>
           <div className="w-[100%]">
-            <Button className="bg-[#ff9900] px-4 py-2 rounded-md w-[50%] md:w-[40%] lg:w-[30%]  mt-6 md:mt-10 font-semibold text-[15px] md:text-[20px]">
+            <Button className="bg-[#ff9900] px-2 py-2 rounded-md w-[30%] md:w-[40%] lg:w-[20%]  mt-6 md:mt-10 font-semibold text-[15px] md:text-[20px]">
               Create playlist
             </Button>
           </div>
