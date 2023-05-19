@@ -4,13 +4,13 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
-import { HiPlusSm } from "react-icons/hi";
+import { HiPlusSm, HiMinusSm } from "react-icons/hi";
 
 const SongAccordion = ({ song, i }) => {
-  const [open, setOpen] = useState(null);
+  const [open, setOpen] = useState(false);
 
   const handleOpen = (value) => {
-    setOpen(open === value ? null : value);
+    setOpen(open === value ? !false : value);
   };
 
   const customAnimation = {
@@ -27,7 +27,7 @@ const SongAccordion = ({ song, i }) => {
               <h3 className="font-semibold">{song.name}</h3>
               <span className="italic font-semibold">{song.artist}</span>
             </div>
-            <HiPlusSm size={25} className="font-bold" />
+            {open === i ? <HiMinusSm size={25} className="font-bold" /> : <HiPlusSm size={25} className="font-bold" />}
           </div>
         </AccordionHeader>
         <AccordionBody className="bg-white w-full rounded-md py-[10px] px-4">
