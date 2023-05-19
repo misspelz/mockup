@@ -20,9 +20,9 @@ const SongAccordion = ({ song, i }) => {
 
   return (
     <Fragment>
-      <Accordion open={open === i} animate={customAnimation}>
-        <AccordionHeader className="ml-2" onClick={() => handleOpen(i)}>
-          <div className="bg-white flex justify-between items-center rounded-md py-[10px] px-4 shadow-lg w-full">
+      <Accordion className="mt-6" open={open === i} animate={customAnimation}>
+        <AccordionHeader className="ml-2 flex gap-4" onClick={() => handleOpen(i)}>
+          <div className="bg-white flex justify-between items-center rounded-md py-[12px] px-4 shadow-lg w-full">
             <div className="flex gap-[4px]">
               <h3 className="font-semibold">{song.name}</h3>
               <span className="italic font-semibold">{song.artist}</span>
